@@ -18,7 +18,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mini-css-extract-plugin": "^2.7.6"
+    "-": "^0.0.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "moment": "^2.29.4"
   },
   "husky": {
     "hooks": {

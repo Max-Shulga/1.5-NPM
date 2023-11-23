@@ -1,6 +1,150 @@
+@import "reset.scss";
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #cb1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #e8ebf0;
 }
-p{
-  color: blue;
+
+#timer-container {
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+#timer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer-text {
+  color: #9299a1;
+  font-size: 26px;
+}
+
+#timer-clocks-container {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+  0px -4px 10px rgba(0, 0, 0, 0.1),
+  -8px 0 12px -6px rgba(0, 0, 0, 0.1),
+  8px 0 12px -6px rgba(0, 0, 0, 0.1),
+  0px 8px 12px -6px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  gap: 10px;
+
+  > span {
+    font-size: 30px;
+    color: #b393f5;
+  }
+}
+
+.timer-clock {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff4ff;
+  background: #7732e3;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(97, 0, 253, 0.1),
+  0px -4px 10px rgba(119, 50, 227, 0.1),
+  -8px 0 12px -6px rgba(119, 50, 227, 0.63),
+  8px 0 12px -6px rgba(119, 50, 227, 0.63),
+  0px 8px 12px -6px rgba(119, 50, 227, 0.63);
+  border-radius: 3px;
+  max-width: 90px;
+  border: none;
+}
+
+#start-button {
+  transform: translateY(-50%);
+  width: 120px;
+  background: rgba(28, 7, 47, 0.92);
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 10px ;
+  border: none;
+  border-radius: 8px;
+}
+
+#button-text {
+  text-shadow: 0 0 10px #512DA8;
+  transition: text-shadow 0.3s ease;
+}
+
+#start-button:hover #button-text {
+  text-shadow: 0 0 15px rgb(75, 0, 126);
+}
+
+#start-button:hover {
+  cursor: pointer;
+  background-color: #7732e3; /* Цвет фона при наведении */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3),
+  0px -4px 10px rgba(0, 0, 0, 0.3),
+  -8px 0 12px -6px rgba(0, 0, 0, 0.3),
+  8px 0 12px -6px rgba(0, 0, 0, 0.3),
+  0px 8px 12px -6px rgba(0, 0, 0, 0.3);
+}
+
+#timer-text-ongoing {
+  color: #512DA8;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#timer-ongoing {
+  margin: 50px 0 0 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+  0px -4px 10px rgba(0, 0, 0, 0.1),
+  -8px 0 12px -6px rgba(0, 0, 0, 0.1),
+  8px 0 12px -6px rgba(0, 0, 0, 0.1),
+  0px 8px 12px -6px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  gap: 10px;
+  display: none;
+}
+
+#timer-ongoing-clock{
+  background:#7732e3 ;
+  display: none;
+  padding: 40px;
+  font-size: 24px;
+  color: #fff4ff;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(97, 0, 253, 0.1),
+  0px -4px 10px rgba(119, 50, 227, 0.1),
+  -8px 0 12px -6px rgba(119, 50, 227, 0.63),
+  8px 0 12px -6px rgba(119, 50, 227, 0.63),
+  0px 8px 12px -6px rgba(119, 50, 227, 0.63);
+}
+
