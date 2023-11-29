@@ -7,7 +7,7 @@
     "dev:assets": "webpack --mode development --watch",
     "dev": "live-server --open=./public/ --host=localhost --watch=./public/",
     "build:assets": "webpack --mode production",
-    "build": "set NODE_ENV=production && npm run build:assets && live-server --open=./public/ --host=localhost",
+    "build": "set NODE_ENV=production && npm run build:assets",
     "build:js": "webpack --mode production",
     "build:css": "sass src/style/main.scss public/style/main.css",
     "lint": "eslint src/js/**/*.js",
