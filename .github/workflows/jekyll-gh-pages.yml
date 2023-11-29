@@ -25,7 +25,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      
+      - name: Install live-server
+        run: npm install -g live-server
 
+      - name: Build with webpack
+        run: npm run build
       - name: Build with webpack
         run: npm run build
 
