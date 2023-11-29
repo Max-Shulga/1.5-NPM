@@ -31,8 +31,7 @@ jobs:
 
       - name: Build with webpack
         run: npm run build
-      - name: Build with webpack
-        run: npm run build
+
 
   deploy:
     runs-on: ubuntu-latest
