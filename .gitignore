@@ -88,4 +88,3 @@ fabric.properties
 /public/style/
 /node_modules/
 /webpack.config.js
-/.eslintrc.json

@@ -18,7 +18,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "-": "^0.0.1",
     "mini-css-extract-plugin": "^2.7.6",
     "moment": "^2.29.4"
   },
