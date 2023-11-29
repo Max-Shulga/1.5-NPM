@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Title</title>
+  <link rel='stylesheet' href='style/style.css'>
+  <audio id='timer-sound' src='audio/audio.mp3' preload='auto'></audio>
+</head>
+<body>
+  <div id='timer-container'>
+    <p class='timer-text'>Simple Timer</p>
+    <div id='timer'>
+      <div id='timer-clocks-container'>
+        <label for='hours'></label><input type='number' class='timer-clock' id='hours' value='00'>
+        <span>:</span>
+        <label for='minutes'></label><input type='number' class='timer-clock' id='minutes' value='00'>
+        <span>:</span>
+        <label for='seconds'></label><input type='number' class='timer-clock' id='seconds' value='00'>
+      </div>
+      <div id='timer-ongoing'><p id='timer-ongoing-clock'></p></div>
+    </div>
+  </div>
+  <button id='start-button'>Start</button>
+  <script src='js/main.bundle.js'></script>
+</body>
+</html>
