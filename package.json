@@ -4,6 +4,7 @@
   "description": "S++ study repository: 'NPM. Збирачі та інші інструменти.'",
   "main": "index.js",
   "scripts": {
+    "start": "live-server ./public --host=localhost",
     "dev:assets": "webpack --mode development --watch",
     "dev": "live-server --open=./public/ --host=localhost --watch=./public/",
     "build:assets": "webpack --mode production",
